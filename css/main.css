@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{ font-size: 62.5%;}
+body{ font-size: 1.6rem; }
+
+/* MODAL */
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(2, 2, 2, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-initial{
+    background-color: white;
+    width: 45%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.397);
+    position: relative;
+}
+
+.modal-content{
+    background-color: white;
+    width: 35%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px rgba(51, 51, 51, 0.397);
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+}
+
+/* CONFIG TELA DE INÍCIO*/
+.title{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    color: #222;
+}
+
+.texto{
+    width: 100%;
+    display: block;
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+#marking{
+    font-size: 1.8rem;
+    width: 60px;
+    margin: 0 3rem;
+    margin-bottom: 2rem;
+}
+/* FIM CONFIG TELA INICIO */
+
+#box{
+    position: relative;
+    min-width: 80%;
+    min-height: 100vh;
+    padding: 3rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 5px;
+    background-color: #333;
+}
+
+.box-campo{
+    display: flex;
+    min-height: 25vh;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 8rem;
+}
+
+.player{
+    min-width: 20%;
+    padding: 3rem;
+    text-align: center;
+}
+
+.player p {font-size: 3rem; color: #222;}
+
+#jogadorAtual{
+    font-size: 15rem;
+    margin-top: 2rem;
+    color: blue;
+}
+
+/* CONFIG MODAL FIM DE JOGO */
+.winner {
+    font-size: 15rem;
+    margin: 0;
+    color: #111;
+}
+
+.message{
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.btn-play{
+    width: 200px;
+    padding: 1rem;
+    align-self: center;
+    background-color: rgb(18, 7, 168);
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 2px 2px 4px rgba(2, 2, 2, 0.3);
+    border: none;
+    font-size: 1.8rem;
+}
+
+.btn-play:active{
+    box-shadow: inset 2px 2px 4px rgba(2, 2, 2, 0.3);
+    background-color: rgb(75, 65, 221);
+}
+
+@media screen and (min-width: 1400px){
+    .modal-content{width: 30%;}
+    .title{
+        font-size: 6rem;
+        margin-bottom: 5rem;
+    }
+    .texto{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    #marking{ font-size: 2.2rem; }
+    .box-campo{ font-size: 12rem; }
+}
+
+@media screen and (max-width: 1023px){
+    .modal-content{width: 50%;}
+    .player{ 
+        width: 25%;
+        padding: 2rem;
+    }
+    .player p {font-size: 3rem;}
+    #jogadorAtual{
+        font-size: 12rem;
+        margin-top: 2rem;
+        color: blue;
+    }
+
+    #box {
+        width: 75%;
+        padding: 3rem 5rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .modal-content{width: 60%;}
+    .container{ flex-direction: column;}
+    .title{
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .texto{font-size: 2rem;}
+
+    #marking{font-size: 2rem;}
+
+    
+    #box{
+        width: 100%;
+        min-height: 75vh;
+        padding: 2rem;
+    }
+    
+    .box-campo{
+        display: flex;
+        min-height: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-size: 8rem;
+    }
+    
+    .player{
+        width: 100%;
+        height: 25vh;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .player p { font-size: 2.5rem;}
+       
+    #jogadorAtual{
+        font-size: 9rem;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 519px){
+    /* MODAL */
+    .modal-content{width: 80%;}
+}

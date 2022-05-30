@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="game" class="modal">
+        <div class="modal-content">
+            <h1 class="title">JOGO DA VELHA</h1>
+            <div class="question">
+                <label for="marking" class="texto">Começar com...</label>
+                <select name="marking" id="marking">
+                    <option value="O">O</option>
+                    <option value="X">X</option>
+                </select>
+            </div>
+
+            <input type="submit" id="btn" class="btn-play" value="Jogar" />
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="box">
+            <div id="one" class="box-campo"></div>
+            <div id="two" class="box-campo"></div>
+            <div id="three" class="box-campo"></div>
+            <div id="four" class="box-campo"></div>
+            <div id="five" class="box-campo"></div>
+            <div id="six" class="box-campo"></div>
+            <div id="seven" class="box-campo"></div>
+            <div id="eight" class="box-campo"></div>
+            <div id="nine" class="box-campo"></div>
+        </div>
+
+        <div class="player">
+            <p>Jogador Atual</p>
+            <p id="jogadorAtual">O</p>
+        </div>
+    </div>
+
+    <!-- MODAL RESULTADO -->
+    <div class="modal" id="modal-winner">
+        <div class="modal-content">
+            <h1 class="winner"></h1>
+            <p class="message"></p>
+            <button class="btn-play" id="btn-fim">Jogar Novamente</button>
+        </div>
+    </div>
+    <script type="module" src="js/jogo.js"></script>
+
+</body>
+</html>
