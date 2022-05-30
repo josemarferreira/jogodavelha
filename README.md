@@ -2,4 +2,4 @@
 Jogo da Velha em JS
 
 Link para visitar o jogo
-<https://vercel.com/josemarferreira/jogodavelha/7H7b5aKne7xgUCdi9dyAwcm7GvRm>
+<https://jogodavelha-i91sek117-josemarferreira.vercel.app/>
