@@ -22,6 +22,9 @@ body{ font-size: 1.6rem; }
     z-index: 1;
 }
 
+.blue { color: blue;}
+.red { color: red;}
+
 .modal-initial{
     background-color: white;
     width: 45%;
@@ -107,7 +110,6 @@ body{ font-size: 1.6rem; }
 #jogadorAtual{
     font-size: 15rem;
     margin-top: 2rem;
-    color: blue;
 }
 
 /* CONFIG MODAL FIM DE JOGO */
@@ -165,7 +167,6 @@ body{ font-size: 1.6rem; }
     #jogadorAtual{
         font-size: 12rem;
         margin-top: 2rem;
-        color: blue;
     }
 
     #box {
