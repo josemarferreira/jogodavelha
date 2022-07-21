@@ -7,8 +7,9 @@ O projeto se trata de um jogo da velha para 2 jogadores, onde na tela inicial é
 Ao iniciar a partida, é apresentado aos jogadores tela do jogo, com os campos a serem marcados, e um painel informando o jogador atual, ao se obter o resultado da partida, um modal é carregado, com o resultado e um botão de jogar novamente.
 
 
-## Motivo
+## :dart: Motivo
 O Objetivo do projeto é por em prática os conceito aprendidos sobre HTML5, CSS3 e JS.
 
-Link para visitar o jogo
-<https://jogodavelha-i91sek117-josemarferreira.vercel.app/>
+## :link: Acesso ao projeto
+
++ Para acessar o jogo [**clique aqui**](http://jogodavelha-eight.vercel.app/ "Link do Jogo da Velha").
