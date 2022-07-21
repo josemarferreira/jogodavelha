@@ -112,6 +112,7 @@ const mostrarVencedor = (jogador) => {
         document.querySelector('.message').innerHTML = "Deu Velha!";
         let img = document.createElement('img')
         img.setAttribute('src', 'img/velha.png');
+        img.classList.add('velha');
         document.querySelector('.winner').innerHTML = "";
         document.querySelector('.winner').appendChild(img);
     }
