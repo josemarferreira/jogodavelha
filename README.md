@@ -1,8 +1,10 @@
-# Jogo da Velha 
+<h1 align="center"> JOGO DA VELHA </h1>
 
-Jogadores: 2
-Na tela inicial, é apresentado um modal onde o 1º jogador deve escolher a marcação para se iniciar o jogo,
-onde é apresentado a tela do jogo, com os campos a serem marcados, e um painel informando o jogador atual, ao final do jogo mostra o resultado e um botão de jogar novamente, que ao clickar reinicia o jogo.
+
+# Descrição do Projeto
+
+O projeto se trata de um jogo da velha para 2 jogadores, onde na tela inicial é apresentado um modal com o nome e imagem do jogo, um menu de seleção onde o jogador que irá iniciar a partida deve escolher uma das marcações (X ou O), e clicar no botão de jogar para iniciar a partida.
+Ao iniciar a partida, é apresentado aos jogadores tela do jogo, com os campos a serem marcados, e um painel informando o jogador atual, ao se obter o resultado da partida, um modal é carregado, com o resultado e um botão de jogar novamente.
 
 Aprendizado: com o desenvolvimento do projeto, adquiri conhecimento sobre medias queries, flexbox e grid, e manipulação de DOM.
 
