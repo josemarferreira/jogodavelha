@@ -1,5 +1,9 @@
-<h1 align="center"> JOGO DA VELHA </h1>
+<h1 align="center"> 
+  <p>JOGO DA VELHA</p>
+  <img src="./img/velha.png" width="256px">
+</h1>
 
+<br>
 
 ## 📝 Descrição do Projeto
 
@@ -13,3 +17,4 @@ O Objetivo do projeto é por em prática os conceito aprendidos sobre HTML5, CSS
 ## :link: Acesso ao projeto
 
 + Para acessar o jogo [**clique aqui**](http://jogodavelha-eight.vercel.app/ "Link do Jogo da Velha").
++ Para acessar o código fonte do projeto, [**baixe o projeto**](https://github.com/josemarferreira/jogodavelha/archive/refs/heads/main.zip "Download do Código Fonte") ou clone o repositório.
