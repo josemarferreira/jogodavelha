@@ -24,10 +24,6 @@ const indMatrix = {
     8: [2,2],
 }
 
-
-// Esconde o Modal do Fim de Jogo
-dialog_fim.style.visibility = "hidden";
-
 let [jg1, jg2] = criarJogadores();
 let jogadas = iniciaMatrix();
 let jogador_atual = jg1;
@@ -40,9 +36,9 @@ botao_inicio.addEventListener('click', () => {
     jg2.marca = jg1.marca == "X" ? "O" : "X";
     corJogadores(jg1,jg2);
 
-    dialog_inicio.style.visibility = "hidden";
+    dialog_inicio.classList.add("hidden");
     jogadorAtual.innerHTML = jg1.marca;
-    jogadorAtual.className = jg2.cor;
+    jogadorAtual.className = jg1.cor;
 });
 
 // Reinicia o Jogo
@@ -58,8 +54,8 @@ botao_fim.addEventListener('click', () => {
     qtd_jogadas = 0;
     jogador_atual = jg1;
     
-    dialog_inicio.style.visibility = "visible";
-    dialog_fim.style.visibility = "hidden";
+    dialog_inicio.classList.remove("hidden");
+    dialog_fim.classList.add("hidden");
 });
 
 
@@ -107,7 +103,8 @@ const trocarJogadorAtual = () => {
 
 //Mostra o Vencedor
 const mostrarVencedor = (jogador) => {
-    dialog_fim.style.visibility = "visible";
+    dialog_fim.classList.remove("hidden");
+    
     if (jogador == "velha"){
         document.querySelector('.message').innerHTML = "Deu Velha!";
         let img = document.createElement('img')
@@ -118,6 +115,7 @@ const mostrarVencedor = (jogador) => {
     }
     else {
         document.querySelector('.winner').innerHTML = jogador.marca;
+        document.quer
         document.querySelector('.message').innerHTML = "Vencedor!";
     }
 };
